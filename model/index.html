@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>&lt;model-viewer&gt; template</title>
+    <meta charset="utf-8">
+    <meta name="description" content="&lt;model-viewer&gt; template">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link type="text/css" href="./styles.css" rel="stylesheet"/>
+  </head>
+  <body>
+    <!-- <model-viewer> HTML element -->
+    <model-viewer src="chipConnector2.glb" ar ar-modes="scene-viewer webxr quick-look" camera-controls poster="poster.webp" shadow-intensity="1" exposure="1.4" camera-target="0m 0m 1.164e-9m" camera-orbit="-90deg 90deg 4.059m" field-of-view="30deg">
+      <button class="Hotspot" slot="hotspot-1" data-position="0.056603646406832846m 0.0034362108132740075m -0.3600679051769233m" data-normal="0.39185233449254014m -0.3052489609821335m -0.8679140624347981m" data-visibility-attribute="visible">
+          <div class="HotspotAnnotation">Коннекторы</div>
+      </button><button class="Hotspot" slot="hotspot-3" data-position="-0.013400862952986564m -0.014532655227942037m -0.852853057581342m" data-normal="-0.9999999999999778m -1.3435886497589538e-7m 1.6292065707872261e-7m" data-visibility-attribute="visible">
+          <div class="HotspotAnnotation">Световой индикатор</div>
+      </button><button class="Hotspot" slot="hotspot-5" data-position="0.04284644159021525m 0.03773679684756004m 0.9123852272351832m" data-normal="0.9999999999999778m 1.3435886497589538e-7m -1.6292065707872261e-7m" data-visibility-attribute="visible">
+          <div class="HotspotAnnotation">Магнитный коннектор</div>
+      </button>
+      <div class="progress-bar hide" slot="progress-bar">
+          <div class="update-bar"></div>
+      </div>
+      <button slot="ar-button" id="ar-button">
+          View in your space
+      </button>
+    </model-viewer>  
+    <script src="script.js"></script>
+    <!-- Loads <model-viewer> for browsers: -->
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.2.0/model-viewer.min.js"></script>
+  </body>
+</html>
